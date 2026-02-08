@@ -212,7 +212,7 @@
 			<div class="footer-flex-content">
 				<div class="footer-logo">
 					<a href="/">
-						<img src={logo_2} alt={logo_alt} class="h-auto w-45 rounded-xl" />
+						<img src={logo_2} alt={logo_alt} class="h-auto w-15 rounded-xl" />
 					</a>
 				</div>
 			</div>
@@ -223,22 +223,17 @@
 				<ul>
 					<li>
 						<a href="/about">
-							<span>桐朋祭について</span>
-						</a>
-					</li>
-					<li>
-						<a href="/access">
-							<span>アクセス</span>
+							<span>当サイトについて</span>
 						</a>
 					</li>
 					<li>
 						<a href="/timetable">
-							<span>タイムテーブル</span>
+							<span>開発中</span>
 						</a>
 					</li>
 					<li>
 						<a href="/qa">
-							<span>よくある質問</span>
+							<span>開発終了</span>
 						</a>
 					</li>
 					<li>
@@ -249,11 +244,11 @@
 				</ul>
 			</div>
 			<div class="footer-flex-content">
-				<h4>参加団体</h4>
+				<h4>テスト</h4>
 				<ul>
 					<li>
 						<a href="/circle/club/tcc">
-							<span>コンピューター部</span>
+							<span>テスト</span>
 						</a>
 					</li>
 				</ul>
@@ -262,33 +257,27 @@
 				<h4>各種SNS / リンク</h4>
 				<ul>
 					<li>
-						<a href="https://x.com" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>
+						<a href="https://x.com/atserver186" target="_blank">
+							<i class="fa-brands fa-x-twitter mr-1 text-xs"></i>
 							<span>公式Twitter(現X)</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>
+						<a href="https://www.youtube.com/@atshift" target="_blank">
+							<i class="fa-brands fa-youtube mr-1 text-xs"></i>
 							<span>公式Instagram</span>
 						</a>
 					</li>
 					<li>
-						<a href="https://atserver186.jp" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>
+						<a href="https://developer.atserver186.jp" target="_blank">
+							<i class="fa-solid fa-comment mr-1 text-xs"></i>
 							<span>公式ATSocial</span>
 						</a>
 					</li>
 					<li>
-						<a href="http://toho.ed.jp" target="_blank">
+						<a href="http://atserver186.jp" target="_blank">
 							<i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>
-							<span>桐朋中学校・高等学校HP</span>
-						</a>
-					</li>
-					<li>
-						<a href="https://2026.tcc-archive.club" target="_blank">
-							<i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>
-							<span>コンピューター部桐朋祭用特設HP</span>
+							<span>ATS総合ホーム</span>
 						</a>
 					</li>
 				</ul>
@@ -301,7 +290,7 @@
 				<img src={logo_2} alt={logo_alt} class="h-auto w-20 rounded-xl" />
 			</a>
 		</div>
-		<!---->
+		<!--アコーディオン-->
 		<div class="overflow-hidden rounded-lg border">
 			<button
 				class="justfy-between flex w-full items-center bg-gray-100 p-4 transition"

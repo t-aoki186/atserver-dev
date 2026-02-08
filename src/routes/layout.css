@@ -12,13 +12,13 @@
 /*============*/
 /*--- root ---*/
 :root {
-    --main-bg-color: #202124;
-    --main-accent-color: #383838;
-    --sub-accent-color: #424242;
+	--main-bg-color: #202124;
+	--main-accent-color: #383838;
+	--sub-accent-color: #424242;
 	--main-text-color: #ccc;
 	--sub-text-color: #ffffff;
-    --emphasis-text-color: #e2e2e2ff;
-    --small-text-color: #a7a7a7;
+	--emphasis-text-color: #e2e2e2ff;
+	--small-text-color: #a7a7a7;
 }
 
 body {
@@ -31,8 +31,8 @@ body {
 }
 
 #nprogress .spinner-icon {
-  border-top-color: var(--main-text-color) !important;
-  border-left-color: var(--main-text-color) !important;
+	border-top-color: var(--main-text-color) !important;
+	border-left-color: var(--main-text-color) !important;
 }
 
 .main-hr {
@@ -56,7 +56,7 @@ body {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tf26-page-title{
+.tf26-page-title {
 	font-size: 1.8rem;
 	font-weight: 600;
 	margin-bottom: 1.25rem;
@@ -312,11 +312,11 @@ body {
 .header-text {
 	color: var(--main-accent-color);
 	cursor: pointer;
-    font-weight: 600;
+	font-weight: 600;
 }
 
 /*---footer---*/
-.footer{
+.footer {
 	background-color: var(--sub-accent-color);
 	margin: 0;
 }
@@ -385,17 +385,72 @@ body {
 	}
 
 	.footer-top-content {
-		width: 95%
+		width: 95%;
 	}
 
 	.footer-bottom-content {
-		width: 95%
+		width: 95%;
 	}
 }
 
-
 /*トップページ*/
-.top-content{
-    background-color: var(--main-text-color);
-    margin: 0;
+.top-content {
+	background-color: var(--main-text-color);
+	margin: 0;
+}
+
+.page-main {
+	width: 75%;
+}
+
+.page-main-content div a,
+.page-main-content p {
+	color: var(--main-text-color);
+}
+
+.page-main-title {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.main-ac,
+.main-bunner-img {
+	width: 30vh;
+	height: auto;
+}
+
+.main-link {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+}
+
+.link-2 {
+	width: calc(100% / 4);
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 15px;
+}
+
+@media (max-width: 768px) {
+	.page-main {
+		width: 95%;
+	}
+
+	.page-main-title {
+		font-size: 1.5rem;
+	}
+
+	.main-link {
+		flex-direction: column;
+	}
+
+	.link-2 {
+		width: 100%;
+	
+	}
 }
