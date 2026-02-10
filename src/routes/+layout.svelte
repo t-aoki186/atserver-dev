@@ -10,8 +10,8 @@
 	let accordionOpen = $state(false);
 
 	//共通変数
-	let logo = 'https://pic.atserver186.jp/img/ATSERVER/dev/test-icon.png';
-	let logo_2 = 'https://pic.atserver186.jp/img/ATSERVER/dev/test-icon.png';
+	let logo = 'https://pic.atserver186.jp/img/atserver/root/ats_logo.webp';
+	let logo_2 = 'https://pic.atserver186.jp/img/atserver/root/ats_logo.webp';
 	let logo_alt = 'ATSERVER-ロゴ画像';
 
 	//ハンバーガーメニュー
@@ -59,7 +59,7 @@
 		<!-- ロゴ -->
 		<a href="/" class="flex shrink-0 whitespace-nowrap transition">
 			<img src={logo} alt="" class="h-10 w-auto rounded-xl" />
-			<!--<p class="m-auto header-text">TOHO FES 2026</p>-->
+			<p class="header-text m-auto ml-2">developer</p>
 		</a>
 		<!-- ハンバーガー / その他メニュー閉じる（スマホ用） -->
 		<div class="grid md:hidden">
@@ -104,16 +104,14 @@
 			<ul class="flex items-center gap-5 whitespace-nowrap transition">
 				<li><a href="/" class="header-text ml-3 text-xs tracking-wider transition">ホーム</a></li>
 				<li>
-					<a href="/about" class="header-text ml-3 text-xs tracking-wider transition">当サイトについて</a>
+					<a href="/active" class="header-text ml-3 text-xs tracking-wider transition">開発中</a>
 				</li>
 				<li>
-					<a href="/active" class="header-text ml-3 text-xs tracking-wider transition"
-						>開発中</a
-					>
+					<a href="/circle" class="header-text ml-3 text-xs tracking-wider transition">開発終了</a>
 				</li>
 				<li>
-					<a href="/circle" class="header-text ml-3 text-xs tracking-wider transition"
-						>開発終了</a
+					<a href="/about" class="header-text ml-3 text-xs tracking-wider transition"
+						>当サイトについて</a
 					>
 				</li>
 				<li class="mr-6">
@@ -131,9 +129,9 @@
 		<nav class="px-6 pt-6 pb-6 md:hidden">
 			<ul class="flex flex-col gap-4 text-sm tracking-wide">
 				<li><a href="/" class="header-text">ホーム</a></li>
-				<li><a href="/about" class="header-text">当サイトについて</a></li>
 				<li><a href="/active" class="header-text">開発中</a></li>
 				<li><a href="/circle" class="header-text">開発終了</a></li>
+				<li><a href="/about" class="header-text">当サイトについて</a></li>
 				<li>
 					<button class="header-text" onclick={() => (otherOpen = !otherOpen)}>その他</button>
 				</li>
@@ -176,14 +174,8 @@
 					>
 				</li>
 				<li>
-					<a href="/access" class="header-text"
-						><i class="fa-solid fa-map mr-1 text-xs"></i>本校へのアクセス</a
-					>
-				</li>
-				<li>
 					<a href="https://atserver186.jp/" target="_blank" class="header-text"
-						><i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"
-						></i>総合ホーム</a
+						><i class="fa-solid fa-arrow-up-right-from-square mr-1 text-xs"></i>総合ホーム</a
 					>
 				</li>
 				<li>
@@ -205,7 +197,7 @@
 {@render children()}
 
 <!--フッター-->
-<footer class="footer m-0 w-full pt-[10] pr-0 pb-[10] pl-0 mb-0">
+<footer class="footer m-0 mb-0 w-full pt-[10] pr-0 pb-[10] pl-0">
 	<div class="hidden md:flex">
 		<div class="footer-top-content">
 			<!-- フッターの左側コンテンツ -->
@@ -259,19 +251,25 @@
 					<li>
 						<a href="https://x.com/atserver186" target="_blank">
 							<i class="fa-brands fa-x-twitter mr-1 text-xs"></i>
-							<span>公式Twitter(現X)</span>
+							<span>Twitter</span>
 						</a>
 					</li>
 					<li>
 						<a href="https://www.youtube.com/@atshift" target="_blank">
 							<i class="fa-brands fa-youtube mr-1 text-xs"></i>
-							<span>公式Instagram</span>
+							<span>YouTube</span>
 						</a>
 					</li>
 					<li>
 						<a href="https://developer.atserver186.jp" target="_blank">
 							<i class="fa-solid fa-comment mr-1 text-xs"></i>
-							<span>公式ATSocial</span>
+							<span>ATSocial</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/t-aoki186/" target="_blank">
+							<i class="fa-brands fa-github mr-1 text-xs"></i>
+							<span>Github</span>
 						</a>
 					</li>
 					<li>
