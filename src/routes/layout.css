@@ -9,6 +9,7 @@
 		@apply mx-2 mt-2 rounded-xl border border-white/2 px-0 shadow-md backdrop-blur-md;
 	}
 }
+
 /*============*/
 /*--- root ---*/
 :root {
@@ -84,13 +85,9 @@ body {
 }
 #scroll-down::before {
 	-webkit-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
-	/* Safari 4+ */
 	-moz-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
-	/* Fx 5+ */
 	-o-animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
-	/* Opera 12+ */
 	animation: elasticus 2.9s cubic-bezier(1, 0, 0, 1) infinite;
-	/* IE 10+, Fx 29+ */
 	position: absolute;
 	top: 0px;
 	left: 50%;

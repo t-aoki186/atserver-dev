@@ -1,5 +1,6 @@
 <svelte:head>
-	<title>test</title>
+	<title>ATSERVER Dev</title>
+	<meta property="og:title" content="ATSERVER" />
 </svelte:head>
 
 <div class="top-content relative h-screen w-full">
@@ -31,7 +32,7 @@
 			<div class="link-2">
 				<div class="mb-5 border-l-2 border-white pl-2 text-sm">
 					<a href="https://linkserver.jp/" target="_blank" rel="noopener noreferrer"
-						><img src="https://linkserver.jp/banner.JPG" class="main-bunner-img" /><i
+						><img src="https://linkserver.jp/banner.JPG" class="main-bunner-img" alt="test" /><i
 							class="fa-solid fa-up-right-from-square mr-1 text-xs"
 						></i>Link2011さんのサイト</a
 					>
@@ -40,7 +41,7 @@
 					<a href="https://256server.com/" target="_blank" rel="noopener noreferrer"
 						><img
 							src="https://256server.com/image/banner/256server.png"
-							class="main-bunner-img"
+							class="main-bunner-img" alt="test"
 						/><i class="fa-solid fa-up-right-from-square mr-1 text-xs"></i>256大好きさんのサイト</a
 					>
 				</div>
@@ -48,20 +49,20 @@
 					<a href="https://www.kaerubasyo.com/" target="_blank" rel="noopener noreferrer"
 						><img
 							src="https://lh3.googleusercontent.com/sitesv/APaQ0SToLELmLZPYsN8yqW8V3jx-_WV8b62GjeCOJC0y6DH-SsZZ77hd1yn62s_iilFl4cLxDbtIAfQepXgfeLOqaAoVfWK8yxbzXZAjMs3O7hKOAqOIFFDai2DB20vawW4fhotFYMI5rOhTA_tBGJLSlv_q3ICBm7L8XxR9tQJMsZOb5IBZfuRS1jDQNlbjPKsGT8FZYILgwDeRpV005Ac6QfXeLaXItiuFJZGC=w1280"
-							class="main-bunner-img"
+							class="main-bunner-img" alt="test"
 						/><i class="fa-solid fa-up-right-from-square mr-1 text-xs"></i>kaeruさんのサイト</a
 					>
 				</div>
 				<div class="mb-5 border-l-2 border-white pl-2 text-sm">
 					<a href="https://umaii.f5.si/" target="_blank" rel="noopener noreferrer"
-						><img src="https://umaii.f5.si/img/banner.png" class="main-bunner-img" /><i
+						><img src="https://umaii.f5.si/img/banner.png" class="main-bunner-img" alt="test" /><i
 							class="fa-solid fa-up-right-from-square mr-1 text-xs"
 						></i>うまいだんごさんのサイト</a
 					>
 				</div>
 				<div class="mb-5 border-l-2 border-white pl-2 text-sm">
 					<a href="https://pusyuuwanko.com/" target="_blank" rel="noopener noreferrer"
-						><img src="https://pusyuuwanko.com/pusyuusystem/images/pw-banner.png" class="main-bunner-img" /><i
+						><img src="https://pusyuuwanko.com/pusyuusystem/images/pw-banner.png" class="main-bunner-img" alt="test" /><i
 							class="fa-solid fa-up-right-from-square mr-1 text-xs"
 						></i>プシューさんのサイト</a
 					>

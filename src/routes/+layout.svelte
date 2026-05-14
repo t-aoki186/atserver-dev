@@ -3,7 +3,9 @@
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
+	/*SEO*/
+	import { page } from '$app/stores';
 
 	//export
 	let { data, children } = $props();
@@ -52,6 +54,26 @@
 <svelte:head>
 	<link rel="stylesheet" href="https://cdn.atserver186.jp/libs/fontawesome/css/all.min.css" />
 	<link rel="icon" href={favicon} />
+	<!--s:SEO-->
+	<!--各ページでheadに内容がなければ以下の内容が表示される-->
+	<title>ATSERVER Dev</title>
+	<meta
+		name="description"
+		content="test"
+	/>
+	<meta
+		name="keywords"
+		content="自宅鯖,自宅サーバー,Server,homeserver,ブログ,電子工作,dev,時計,リンク共有サービス,ATSLink,メモ帳,wiki,SNS,atserver,えーてぃーさーばー,ATS,ATSocial,Commina, 自作SNS, ATSERVER, 投稿, ミニゲーム, Webサービス"
+	/>
+	<meta property="og:site_name" content="ATSERVER Dev" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://dev.atserver186.jp/ogp.png" />
+	<meta property="og:title" content="ATSERVER Dev" />
+	<link rel="canonical" href={$page.url.href} />
+	<meta property="og:url" content={$page.url.href} />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@ATSERVER186" />
+	<!--e:SEO-->
 </svelte:head>
 
 <header class={headerClass}>
@@ -73,13 +95,13 @@
 					<div class="flex h-10 w-9 cursor-pointer flex-col items-center justify-center">
 						<input class="peer hidden" type="checkbox" checked={open} />
 						<div
-							class="header-hamburger h-0.5 w-[50%] origin-left translate-y-[0.45rem] rounded-sm bg-black transition-all duration-300 peer-checked:rotate-[-45deg]"
+							class="header-hamburger h-0.5 w-[50%] origin-left translate-y-[0.45rem] rounded-sm bg-black transition-all duration-300 peer-checked:-rotate-45"
 						></div>
 						<div
 							class="header-hamburger h-0.5 w-[50%] origin-center rounded-md bg-black transition-all duration-300 peer-checked:hidden"
 						></div>
 						<div
-							class="header-hamburger h-0.5 w-[50%] origin-left -translate-y-[0.45rem] rounded-md bg-black transition-all duration-300 peer-checked:rotate-[45deg]"
+							class="header-hamburger h-0.5 w-[50%] origin-left -translate-y-[0.45rem] rounded-md bg-black transition-all duration-300 peer-checked:rotate-45"
 						></div>
 					</div>
 				</button>
